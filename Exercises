@@ -1,1 +1,42 @@
 #1
+
+#2
+
+#3
+
+#4
+#a
+def Xaxismirror(x):
+    Coordinates = []
+    for i in x:
+        New = 7 - i
+        Coordinates.append(New)
+    print(Coordinates)
+
+#b
+def Yaxismirror(x):
+    Coordinates= []
+    for i in range(7,-1,-1):
+        Coordinates.append(x[i])
+    print(Coordinates)
+
+#c
+def rotateby90(x):
+    List = [0,0,0,0,0,0,0,0]
+    xcoordinates= [0,1,2,3,4,5,6,7]
+    ycoordinates = x.copy()
+    for i in range(0,8,1):
+        newx = xcoordinates[i]
+        newy = ycoordinates[i]
+        newy2 = newx
+        newx2 = -(newy) + 7
+        List.remove(0)
+        List.insert(newx2,newy2)
+    print(List)
+
+#d,e - No idea how to do
+
+#5
+
+#6
+Book is read already.
