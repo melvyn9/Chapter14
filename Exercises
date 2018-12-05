@@ -37,6 +37,52 @@ def rotateby90(x):
 #d,e - No idea how to do
 
 #5
+#a
+my_tickets = [ [ 7, 17, 37, 19, 23, 43],
+               [ 7,  2, 13, 41, 31, 43],
+               [ 2,  5,  7, 11, 13, 17],
+               [13, 17, 37, 19, 23, 43] ]
+Lotterynumbers = []
+MatchingNumbers = []
+import random
+
+
+
+def lottery():
+    for i in range(6):
+        Lotterynumbers.append(random.randrange(0,49))
+    print(Lotterynumbers)
+    
+#b
+lottery()
+for i in range(0,3):
+    for j in range(0,6):
+        if Lotterynumbers[j] == my_tickets[i][j]:
+            MatchingNumbers.append(Lotterynumbers[j])
+print(MatchingNumbers)
+
+#c
+primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
+def is_prime(n):
+        if n % i == 0:
+            print("false")
+        else:
+            print("True")
+is_prime(primes)
+
+#d
+List = []
+for i in my_tickets:
+    List += i
+
+def primes(l):
+    primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
+    for i in l:
+        if i in primes:
+            primes.remove(i)
+    print(primes)
+
+#e no idea how to do
 
 #6
 Book is read already.
