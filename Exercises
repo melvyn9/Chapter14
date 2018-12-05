@@ -1,8 +1,11 @@
-#1
+#1 #no idea
 
 #2
-
-#3
+def max diagonal(x0, y0, x1, y1):
+    dy = abs(y1 - y0)
+    dx = abs(x1 - x0)
+    return dx == dy
+#3 #noidea
 
 #4
 #a
